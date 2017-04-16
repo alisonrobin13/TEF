@@ -1,0 +1,297 @@
+/* --------------------------------------------------
+SECTION 0: Welcome!
+	Hello! I'm AlisonRobin and this is the CSS for my art page.
+	You are probably a member of TEFc if you are reading this! It's nice to meet you! If you would like to use my code or if you have questions about it, feel free to ask and I will show you how to use any of it for yourself.
+-------------------------------------------------- */
+
+
+
+/* --------------------------------------------------
+SECTION 1: Page-Specific codes.
+	This chunk of CSS is mostly for a few specific things on this page such as divs with specific content that need CSS to place them in the right places.
+-------------------------------------------------- */
+
+
+
+/*handles the hover of art thumbs and makes them big*/
+
+a.art {
+	position:relative;
+	color:#000000
+}
+
+a.art:hover {
+	z-index:1;
+	background:transparent;
+}
+
+a.art span {
+	display:none;
+}
+
+a.art:hover span {
+	position:absolute;
+	border:1px solid #000000;
+	background-color:#ffffff;
+	display:block;
+	padding:5px;
+}
+
+
+
+/*the left div containing all the thumbs*/
+
+#thumbholder {
+	padding:10px;
+	width:250px;
+	float:left;
+}
+
+
+
+/*the right div containing all the words*/
+
+#wordholder {
+	padding:10px;
+	margin-left:270px;
+	width:460px;
+}
+
+
+
+/* --------------------------------------------------
+SECTION 2: Important stuff
+	This section deals with things that are part of the TEFc site that needed modification in order to be made to behave.
+-------------------------------------------------- */
+
+
+
+/*The body of the page. Underlying stuff as well as stuff that is pagewide.*/
+
+body {
+	background:#ffffff;
+	font:14px lucida console;
+	color:#000000;
+}
+
+
+
+/*The area around the node. This part affects things related to node size and look.*/
+
+#wrapper #container #center .right-corner .left-corner {
+	background:#ffffff;
+	position:relative;
+	margin:auto;
+	width:800px;
+	border-style:solid;
+	border-width:1px;
+}
+
+
+/*These contribute to the centering of the blog. Thanks to Unplugged!*/
+
+#wrapper #container #center {
+	float:none;
+	position:absolute
+}
+
+body.sidebar-left #center, body.sidebar-left #squeeze {
+	margin-left:0px
+}
+
+
+
+/*The node itself. Border-bottom is an annoying blue line.*/
+
+.node {
+	background:transparent;
+	border-bottom:none
+}
+
+.node .content {
+	margin:0px;
+}
+
+
+
+/*The area hidden behind the comments*/
+
+#comments {
+	background:transparent
+}
+
+
+
+/*The odd and even comments. Odd comes first, even is second, odd is third, and so on. Just like numbers*/
+
+.comment.odd, tr.odd, tr.info {
+	background:transparent;
+	border:none;
+	margin-left:-35px;
+}
+
+tr.even, .comment.even {
+	background:transparent;
+	border:none;
+	margin-left:-35px;
+}
+
+
+.comment .clear-block .content .clear-block{display:none}
+
+
+/*The "new" on new comments*/
+
+.new {
+	background:transparent;
+	font:12px lucida console;
+	color:#000000
+}
+
+
+
+/*These are the places where it prompts one to edit or reply*/
+
+.comment div.links {
+	background:transparent
+}
+
+
+
+/*This is the area around the avatar*/
+
+.picture {
+	background:transparent
+}
+
+
+
+/*This is the ares specifically around the avatar of the first poster*/
+
+.node .picture {
+	display:none
+}
+
+
+
+/*This is where it says when something was submitted. Immune to color changes*/
+
+.submitted {
+	background:transparent
+}
+
+
+
+/*Changes the color of the font in the submission areas*/
+
+span.submitted {
+	color:#000000
+}
+
+
+
+/*This area refers specifically to the submission info for the original post*/
+.node .submitted{
+	display:none
+}
+
+
+
+/*Affects the look of every link on the page. Thanks Unplugged!*/
+
+#block-menu-primary-links a,#tabs-wrapper a,#squeeze h2,a:link,a:visited {
+	color:#000000;
+	text-decoration:underline;
+} 
+
+ul.pager a {
+	color:#000000};
+}
+
+
+
+/*The part at the bottom of the blog allowing add new comment*/
+
+.links {
+	background:transparent
+}
+
+
+
+/* --------------------------------------------------
+SECTION 3: Hidden Stuff
+	This section is all about taking TEFc things and making them hidden so my page is how I want it.
+-------------------------------------------------- */
+
+
+
+/*I got rid of the entire sidebar*/
+
+.sidebar {
+	display:none
+}
+
+
+
+/*The title of the thread. Border-bottom is a line.*/
+
+#tabs-wrapper{
+	display:none;
+	border-bottom:none
+}
+
+
+
+/*The oak leaf that appears in the title.*/
+
+#squeeze h2:before {
+	display:none
+}
+
+
+
+/*The text part of the title.*/
+
+#squeeze h2 {
+	display:none;
+}
+
+
+
+/*Header area*/
+
+#header {
+	display:none
+}
+
+
+
+/*Area around the TEF Logo*/
+
+#logo {
+	display:none
+}
+
+
+
+/*TEF Logo itself*/
+
+#header img {
+	display:none
+}
+
+
+
+/*Top navigation Tale of Tales bar*/
+
+#header-region {
+	display:none
+}
+
+
+
+/*This is a part of a blog that normally directs a viwer to the poster's blog*/
+
+.breadcrumb {
+	display:none
+}
